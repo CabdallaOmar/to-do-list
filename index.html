@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Planify personal planning dashboard">
+  <title>Planify — Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Planify home"><span class="brand-mark">P</span><span>planify<span class="brand-dot">.</span></span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a class="nav-link active" aria-current="page" href="index.html">Overview</a>
+      <a class="nav-link" href="daily.html">Daily plan</a>
+      <a class="nav-link" href="weekly.html">Weekly plan</a>
+      <a class="nav-link" href="goals.html">Goals</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <div class="header-note"><span class="status-dot"></span> Make today count</div>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow eyebrow-light">YOUR SPACE TO FOCUS</p>
+        <h1>A little progress<br>goes a <span>long way.</span></h1>
+        <p class="hero-text">Bring your tasks, study plans, and personal goals together in one calm space.</p>
+        <a class="button button-light" href="daily.html">Explore today's plan <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="focus-card">
+          <div class="focus-card-top"><span class="mini-icon">✦</span><span class="tiny-label">DAILY FOCUS</span><span class="focus-dots">•••</span></div>
+          <div class="focus-number">03<span>/05</span></div>
+          <p>Priorities in progress</p>
+          <div class="progress-track"><span style="width:60%"></span></div>
+          <div class="focus-foot"><span>Keep it steady</span><span>60%</span></div>
+        </div>
+        <div class="floating-chip chip-top">✦ One step at a time</div>
+        <div class="floating-chip chip-bottom"><span class="chip-check">✓</span> Stay consistent</div>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading">
+        <div><p class="eyebrow">YOUR OVERVIEW</p><h2>Make room for what matters</h2></div>
+        <span class="date-pill">✧ Planning dashboard</span>
+      </div>
+      <div class="stats-grid">
+        <article class="stat-card"><div class="stat-top"><span class="stat-icon icon-lilac">▤</span><span class="stat-change">This plan</span></div><p class="stat-label">Planned tasks</p><div class="stat-value">08</div><p class="stat-caption">A sample list to get started</p></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-icon icon-mint">✓</span><span class="stat-change">Daily</span></div><p class="stat-label">Top priorities</p><div class="stat-value">03</div><p class="stat-caption">Focus on the important things</p></article>
+        <article class="stat-card"><div class="stat-top"><span class="stat-icon icon-peach">◎</span><span class="stat-change">Weekly</span></div><p class="stat-label">Personal goals</p><div class="stat-value">04</div><p class="stat-caption">Small actions build momentum</p></article>
+      </div>
+    </section>
+
+    <section class="dashboard-grid">
+      <article class="surface task-panel">
+        <div class="panel-heading"><div><p class="eyebrow">KEEP IT MOVING</p><h2>Today's checklist</h2></div><a class="inline-link" href="daily.html">See daily plan <span>→</span></a></div>
+        <ul class="checklist">
+          <li><label class="check-row"><input type="checkbox"><span class="custom-check"></span><span class="task-copy"><strong>Study JavaScript</strong><small>Learning · 45 minutes</small></span></label><span class="category cat-blue">Study</span></li>
+          <li><label class="check-row"><input type="checkbox"><span class="custom-check"></span><span class="task-copy"><strong>Review university notes</strong><small>University · 30 minutes</small></span></label><span class="category cat-purple">Class</span></li>
+          <li><label class="check-row"><input type="checkbox"><span class="custom-check"></span><span class="task-copy"><strong>Take a short walk</strong><small>Wellbeing · 20 minutes</small></span></label><span class="category cat-green">Health</span></li>
+          <li><label class="check-row"><input type="checkbox"><span class="custom-check"></span><span class="task-copy"><strong>Plan tomorrow</strong><small>Personal · 10 minutes</small></span></label><span class="category cat-orange">Routine</span></li>
+        </ul>
+        <p class="static-note"><span>ⓘ</span> Demo checklist: checked items are not saved after refresh.</p>
+      </article>
+
+      <article class="surface schedule-panel">
+        <div class="panel-heading"><div><p class="eyebrow">A GENTLE ROUTINE</p><h2>Today's rhythm</h2></div><span class="round-icon">◷</span></div>
+        <div class="schedule-list">
+          <div class="schedule-item"><span class="schedule-time">08:00</span><span class="schedule-line"></span><div><strong>Morning study</strong><p>Start with one clear priority</p></div></div>
+          <div class="schedule-item"><span class="schedule-time">10:00</span><span class="schedule-line"></span><div><strong>Practice session</strong><p>Build skills through repetition</p></div></div>
+          <div class="schedule-item"><span class="schedule-time">14:00</span><span class="schedule-line"></span><div><strong>Project time</strong><p>Work in focused blocks</p></div></div>
+          <div class="schedule-item"><span class="schedule-time">20:00</span><span class="schedule-line"></span><div><strong>Daily reflection</strong><p>Notice what went well</p></div></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="bottom-banner"><div class="banner-symbol">✦</div><div><p class="eyebrow">YOUR NEXT STEP</p><h2>Progress over perfection.</h2><p>Choose a realistic goal and give it your attention.</p></div><a class="button button-primary" href="goals.html">View my goals <span>→</span></a></section>
+  </main>
+  <footer class="site-footer"><a class="footer-brand" href="index.html">planify<span class="brand-dot">.</span></a><p>Designed for clearer days and calmer planning.</p><span>HTML + CSS</span></footer>
+</body>
+</html>
